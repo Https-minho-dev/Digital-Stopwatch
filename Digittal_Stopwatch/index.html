@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Chrono | Global Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glass-container">
+        <main class="stopwatch">
+            <div class="display-container">
+                <div class="display" id="display">00:00:00.00</div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-start" id="startBtn">Start</button>
+                <button class="btn btn-pause" id="pauseBtn" disabled>Pause</button>
+                <button class="btn btn-lap" id="lapBtn" disabled>Lap</button>
+                <button class="btn btn-reset" id="resetBtn" disabled>Reset</button>
+            </div>
+
+            <div id="errorBox" class="error-msg hidden"></div>
+
+            <div class="laps-container">
+                <ul id="lapsList"></ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>API Source: <a href="http://worldtimeapi.org" target="_blank">WorldTimeAPI</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
